@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 
 const el = document.getElementById("app");
 console.log(process);
+console.log(process.env.APP_NAME);
 
 const init = async () => {
   const res = await api.get<MeResponse>("/api/me");
