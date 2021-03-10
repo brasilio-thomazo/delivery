@@ -1,0 +1,47 @@
+.table {
+  overflow-x: auto;
+  max-width: 100vw;
+  //box-shadow: 5px 5px 3px rgba($color: $secondary-dark, $alpha: 0.3);
+  //border-radius: 4px;
+  //background-color: $secondary-dark;
+
+  .items {
+    min-width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    .actions {
+      width: 60px;
+    }
+    .buttons {
+      button {
+        color: $secondary;
+        padding: 0 5px;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    th {
+      text-transform: uppercase;
+      background-color: $secondary;
+      color: $text-primary;
+    }
+    td,
+    th {
+      padding: 0.5rem;
+      text-align: left;
+      border: 1px solid $secondary-ligth;
+      white-space: nowrap;
+    }
+    .actions {
+      text-align: center;
+      button {
+        color: $secondary-dark;
+        font-size: 1rem;
+        &:hover {
+          color: $primary-dark;
+        }
+      }
+    }
+  }
+}

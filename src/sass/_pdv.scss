@@ -1,0 +1,100 @@
+.pdv {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto 1fr auto auto;
+  row-gap: 10px;
+  padding: 10px;
+
+  .client-label {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .autocomplete {
+    margin: 0px 10px 10px 0px;
+    flex-grow: 1;
+  }
+
+  .product-label {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+  }
+  .product-field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order {
+    overflow: auto;
+    box-shadow: 5px 5px 3px rgba($color: $secondary-dark, $alpha: 0.3);
+    border-radius: 4px;
+    .items {
+      min-width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      th {
+        text-transform: uppercase;
+        background-color: $secondary;
+        color: $text-primary;
+      }
+      td,
+      th {
+        padding: 0.5rem;
+        text-align: left;
+        border: 1px solid $secondary-ligth;
+      }
+      .actions {
+        text-align: center;
+        button {
+          color: $secondary-dark;
+          font-size: 1rem;
+          &:hover {
+            color: $primary-dark;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-icon {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
+    color: $secondary-dark;
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .observation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .total {
+    .field {
+      border-color: $secondary-ligth;
+      width: 120px;
+    }
+    .line {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 2px solid $secondary-ligth;
+      line-height: 40px;
+    }
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .pdv {
+    .autocomplete {
+      margin: 10px 0px;
+    }
+  }
+}
