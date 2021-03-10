@@ -33,6 +33,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('order_item_parts')->truncate();
         DB::table('order_items')->truncate();
+        DB::table('printers')->truncate();
         DB::table('orders')->truncate();
         DB::table('payments')->truncate();
         Payment::create([
