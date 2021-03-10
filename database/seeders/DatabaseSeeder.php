@@ -17,19 +17,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->truncate();
-        User::create([
-            'name'     => 'Sistema',
-            'username' => 'system',
-            'email'    => 'system@localhost',
-            'password' => Hash::make('system'),
-        ]);
-        User::create([
-            'name'     => 'admin',
-            'username' => 'admin',
-            'email'    => 'admin@localhost',
-            'password' => Hash::make('admin'),
-        ]);
 
         DB::table('order_item_parts')->truncate();
         DB::table('order_items')->truncate();
@@ -51,6 +38,20 @@ class DatabaseSeeder extends Seeder
         Payment::create([
             'name'  => 'VR',
             'repay' => false,
+        ]);
+        
+        DB::table('users')->truncate();
+        User::create([
+            'name'     => 'Sistema',
+            'username' => 'system',
+            'email'    => 'system@localhost',
+            'password' => Hash::make('system'),
+        ]);
+        User::create([
+            'name'     => 'admin',
+            'username' => 'admin',
+            'email'    => 'admin@localhost',
+            'password' => Hash::make('admin'),
         ]);
         // \App\Models\User::factory(10)->create();
     }
