@@ -1,4 +1,5 @@
 import axios from "axios";
+import { config } from "../config";
 
 export const numberFormat = (n: number) => {
   const intl = Intl.NumberFormat("pt-BR", {
@@ -21,11 +22,11 @@ interface PlaceResponse {
 }
 
 const httpPlaces = axios.create({
-  baseURL: process.env.REACT_APP_PLACE_URL,
+  baseURL: config.PLACE_URL,
 });
 
 export const api = axios.create({
-  baseURL: "http://192.168.0.4:8000",
+  baseURL: config.APP_BASE_URL,
   withCredentials: true,
   headers: { Accept: "application/json" },
 });
@@ -53,7 +54,7 @@ export const placesSearch = (key: string) => {
   let uri = `/${encodeURI(key)}.json`;
   return httpPlaces.get<PlaceResponse>(uri, {
     params: {
-      access_token: process.env.REACT_APP_MBX_TOKEN,
+      access_token: config.MBX_TOKEN,
       cachebuster: "1614266800421",
       autocomplete: true,
       country: "br",

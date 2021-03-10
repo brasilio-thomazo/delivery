@@ -1,6 +1,6 @@
 import React, { SyntheticEvent, useState } from "react";
 import { useDispatch } from "react-redux";
-import { api } from "../services/api";
+import { api } from "../services";
 import { setAuthenticate } from "../store/actions";
 
 type Props = React.PropsWithChildren<{}>;
