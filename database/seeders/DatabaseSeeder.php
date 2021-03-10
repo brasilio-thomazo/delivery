@@ -18,11 +18,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        DB::table('order_item_parts')->truncate();
-        DB::table('order_items')->truncate();
-        DB::table('printers')->truncate();
-        DB::table('orders')->truncate();
-        DB::table('payments')->truncate();
+        //DB::table('order_item_parts')->truncate();
+        //DB::table('order_items')->truncate();
+        //DB::table('printers')->truncate();
+        //DB::table('orders')->truncate();
+        //DB::table('payments')->truncate();
         Payment::create([
             'name'  => 'Dinheiro',
             'repay' => true,
@@ -39,8 +39,8 @@ class DatabaseSeeder extends Seeder
             'name'  => 'VR',
             'repay' => false,
         ]);
-        
-        DB::table('users')->truncate();
+
+        //DB::table('users')->truncate();
         User::create([
             'name'     => 'Sistema',
             'username' => 'system',
