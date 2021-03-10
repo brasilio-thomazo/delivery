@@ -63,20 +63,3 @@ export const placesSearch = (key: string) => {
     },
   });
 };
-
-export const places = {
-  search(key: string) {
-    let uri = `${encodeURI(key)}.json`;
-    return httpPlaces.get(uri, {
-      params: {
-        access_token: process.env.REACT_APP_MBX_TOKEN,
-        cachebuster: "1614266800421",
-        autocomplete: true,
-        country: "br",
-        types: "address",
-        language: "pt",
-        proximity: "-46.76467682916416,-23.499345647600578",
-      },
-    });
-  },
-};

@@ -6,7 +6,6 @@ import React, {
   SyntheticEvent,
 } from "react";
 
-import { PlacesRef } from "../models";
 import { useSelector } from "react-redux";
 
 type Props = React.PropsWithRef<{

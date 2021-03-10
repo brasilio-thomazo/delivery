@@ -7,7 +7,6 @@ import React, {
 } from "react";
 
 import { placesSearch } from "../services";
-import { PlacesRef } from "../models";
 
 type Props = React.PropsWithRef<{
   onSelected: (data: string) => void | undefined;

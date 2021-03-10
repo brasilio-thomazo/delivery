@@ -15,8 +15,8 @@ export const Clients: React.FC<Props> = () => {
             <th>#</th>
             <th>Nome</th>
             <th>Telefone</th>
-            <th>Endereço</th>
-            <th>Número</th>
+            <th>Endere&ccedil;o</th>
+            <th>N&uaacute;mero</th>
             <th>Complemento</th>
             <th className="actions"></th>
           </tr>

@@ -119,19 +119,19 @@ export const Form: React.FC<Props> = () => {
       </div>
       <div className="line">
         <div className="col">
-          <label htmlFor="address">Endereço:</label>
+          <label htmlFor="address">Endere&ccedil;o:</label>
           <Places
             ref={placeRef}
             onSelected={onSelected}
             value={values.address}
           />
           <div className="field-text">
-            (*) Endereço
+            (*) Endere&ccedil;o
             <span className="error">{reason.errors?.address}</span>
           </div>
         </div>
         <div className="col flex-teste">
-          <label htmlFor="addr_number">Número:</label>
+          <label htmlFor="addr_number">N&uacute;mero:</label>
           <input
             type="number"
             id="addr_number"
@@ -141,7 +141,7 @@ export const Form: React.FC<Props> = () => {
             value={values.addr_number}
           />
           <div className="field-text">
-            (*) Número da casa
+            (*) N&uacute;mero da casa
             <span className="error">{reason.errors?.addr_number}</span>
           </div>
         </div>
@@ -157,7 +157,7 @@ export const Form: React.FC<Props> = () => {
             value={values.addr_complement}
           />
           <div className="field-text">
-            Complemento do endereço (Apt, Bloco, etc)
+            Complemento do endere&ccedil;o (Apt, Bloco, etc)
           </div>
         </div>
       </div>

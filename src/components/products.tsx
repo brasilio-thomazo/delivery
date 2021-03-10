@@ -18,7 +18,7 @@ export const Products: React.FC<Props> = () => {
             <th>Nome</th>
             <th>Tipo</th>
             <th>Categoria</th>
-            <th>Descrição</th>
+            <th>Descri&ccedil;&atilde;o do</th>
             <th>Custo</th>
             <th>Venda</th>
             <th className="actions"></th>

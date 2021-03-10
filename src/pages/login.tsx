@@ -54,7 +54,7 @@ export const Login: React.FC<Props> = () => {
         <form className="form-login" onSubmit={onSubmit}>
           <div className="field-line">
             <label htmlFor="username" className="form-label">
-              Usuário
+              Usu&aacute;rio
             </label>
             <input
               type="text"

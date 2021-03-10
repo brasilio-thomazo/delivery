@@ -66,7 +66,7 @@ export const appState: AppState = {
   links: [
     { uri: "/", text: "Home" },
     { uri: "/pdv", text: "PDV" },
-    { uri: "/users", text: "Usuários" },
+    //{ uri: "/users", text: "Usu&aacute;rios" },
     { uri: "/clients", text: "Clientes" },
     { uri: "/products", text: "Produtos" },
   ],

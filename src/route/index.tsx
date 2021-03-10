@@ -29,6 +29,7 @@ export const Routes: React.FC<Props> = () => {
       <PrivateRoute path="/clients" component={Clients} />
       <PrivateRoute path="/products" component={Products} />
       <PrivateRoute path="/pdv" component={Pdv} />
+      <Route path="/login" component={Login} />
       <PrivateRoute path="/" component={Home} />
     </Switch>
   );

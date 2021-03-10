@@ -169,7 +169,7 @@ export const FormProduct: React.FC<Props> = () => {
       </div>
       <div className="line">
         <div className="col">
-          <label htmlFor="description">Descrição</label>
+          <label htmlFor="description">Descri&ccedil;&atilde;o do</label>
           <textarea
             className="text-area"
             id="description"
@@ -178,7 +178,7 @@ export const FormProduct: React.FC<Props> = () => {
             onChange={onChange}
           />
           <div className="field-text">
-            (*) Descrição do produto{" "}
+            (*) Descri&ccedil;&atilde;o do produto{" "}
             <span className="error">{reason.errors?.description}</span>
           </div>
         </div>
