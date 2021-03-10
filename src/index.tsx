@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { App } from "./components/app";
-import reportWebVitals from "./reportWebVitals";
+//import reportWebVitals from "./reportWebVitals";
 import { store } from "./store";
 
 //import "./sass/delivery.scss";
@@ -25,4 +25,4 @@ const init = async () => {
 };
 
 init();
-reportWebVitals();
+//reportWebVitals();
